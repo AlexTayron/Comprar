@@ -1,14 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import {  styles} from "./styles";
+import { Image, View } from "react-native";
+import { styles } from "./styles";
 
 export function Home() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!!</Text>
-      <StatusBar style="auto" />
+      <Image source={require("@/assets/logo.png")} style={styles.logo} />
     </View>
   );
 }
-
-
